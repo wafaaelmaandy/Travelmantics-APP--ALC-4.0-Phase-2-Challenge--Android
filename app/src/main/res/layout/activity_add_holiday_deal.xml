@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AddHolidayDealActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deal_title_ET"
+            android:inputType="text"
+            style="@style/signup"
+            android:hint="@string/title"
+            />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deal_details_ET"
+        android:inputType="text"
+        style="@style/signup"
+        android:hint="@string/details"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deal_price_ET"
+        android:inputType="numberDecimal"
+        style="@style/signup"
+        android:hint="@string/price"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="insertPhoto"
+            android:id="@+id/insert_img"
+            android:text="select image"
+            style="@style/signup"
+            android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/dealPhoto"
+        android:id="@+id/deal_image"/>
+
+
+</LinearLayout>

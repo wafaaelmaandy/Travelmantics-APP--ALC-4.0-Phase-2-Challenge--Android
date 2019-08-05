@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Travelmantics</string>
+    <string name="email">email</string>
+    <string name="save">Save</string>
+    <string name="name"><![CDATA[Frist&Last Name]]></string>
+    <string name="password">Password</string>
+    <string name="dealPhoto">deal photo</string>
+    <string name="price">price</string>
+    <string name="details">details</string>
+    <string name="title">title</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+    <string name="openAddDeal">open Add Deal</string>
+    <string name="deal_object">DEAL_OBJECT</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Log out</string>
+</resources>

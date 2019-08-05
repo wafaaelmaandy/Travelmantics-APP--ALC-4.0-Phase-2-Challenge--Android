@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/deal_layout_list_item"
+    android:focusable="true"
+    android:layout_margin="@dimen/layout_margin">
+
+    <ImageView
+        android:id="@+id/deal_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="@dimen/layout_margin"
+        android:contentDescription="@string/dealPhoto"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/deal_title_tv"
+            style="@style/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/deal_details_tv"
+            style="@style/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:textSize="@dimen/details" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deal_price_tv"
+            style="@style/signup"
+            android:text="@string/price"
+            android:layout_gravity="right"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+</LinearLayout>

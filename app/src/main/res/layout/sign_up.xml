@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    tools:context=".ui.SignUp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="@dimen/layout_margin_Top"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:id="@+id/email_ET"
+        style="@style/signup"
+        android:autofillHints="@string/email"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        style="@style/signup"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:id="@+id/name_ET"
+        style="@style/signup"
+        android:autofillHints="@string/name"
+        android:inputType="text" tools:targetApi="o" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        style="@style/signup"
+        android:autofillHints="@string/password"
+        android:inputType="textPassword" tools:targetApi="o" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:onClick="save"
+        style="@style/signup"
+        android:background="@color/colorAccent"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_gravity="right"/>
+
+</LinearLayout>
